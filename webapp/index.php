@@ -2,11 +2,13 @@
 <html>
 
         <head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/styles.css"/>
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-
-<script src="https://raw.githubusercontent.com/malsup/form/master/jquery.form.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.50/jquery.form.min.js"></script>
 
 <script>
 
@@ -80,59 +82,26 @@ $(document).ready(function(){
 });
 
 </script>
-<style>
-	#page {
-	
-	}
-	.hd {
-
-		text-align:center;
-	}
-	#generated {
-		text-align:center;
-		padding-bottom:20px;
-		padding-top:20px;
-	}
-	#generated input {
-
-		font-size:20px;
-	}
-	.not_generated {
-
-	}
-	form {
-		width:500px;
-		margin-left:auto;
-		margin-right:auto;
-
-	}
-	#page input, #page textarea, #page select {
-		width:500px;
-	}
-	#page table {
-
-		width:100%;
-	}
-	td {
-
-		padding-bottom:10px;
-	}
-	.error {
-		white-space:nowrap;
-		color: red;
-	}
-</style>
-
 </head>
 
         <body>
-
+	<!-- <?php include_once("analyticstracking.php") ?>
+-->
 	<div id="page">
 
 	<div class="hd">
-
-		Generate custom preview links for social media.
-
+		<div class="title">
+			<div>
+				<img id="logo" src="images/so.cial.ninja-logo.png" />
+				<div id="logo_text">
+					<h1>So.cial.ninja</h1>
+					<div class="version">alpha</div>
+				</div>
+			</div>
+			<div class="summary">
+				<em>a social media link generator</em>
+			</div>
+		</div>
 	</div>	
 	<div id="generated" >
 		<input id="gen_url" placeholder="Generated link will display here" type="text" readonly />
