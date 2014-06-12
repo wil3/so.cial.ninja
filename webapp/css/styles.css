@@ -68,6 +68,9 @@ body > #page { height: auto; min-height: 100%; }
 		text-align:center;
 		padding-bottom:20px;
 		padding-top:20px;
+		width:500px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 	#generated input {
 
@@ -83,7 +86,7 @@ body > #page { height: auto; min-height: 100%; }
 
 	}
 	#page input, #page textarea, #page select {
-		width:500px;
+		width:100%;
 	}
 	#page table {
 
@@ -92,6 +95,9 @@ body > #page { height: auto; min-height: 100%; }
  	#new_link	td {
 
 		padding-bottom:10px;
+	}
+	#gen_url {
+		width:488px !important;
 	}
 	.error {
 		white-space:nowrap;

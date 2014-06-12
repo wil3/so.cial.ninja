@@ -42,6 +42,8 @@
 		echo "<meta property=\"og:type\" content=\"".$og->type."\"  />";
     		echo "<meta property=\"og:url\" content=\"{$this_url}\" />";
     		echo "<meta property=\"og:image\" content=\"".$og->image."\" />";
+
+		
 		//Optional
 		if (!empty($og->site_name)){
 			echo "<meta property=\"og:site_name\" content=\"".$og->site_name."\" />";

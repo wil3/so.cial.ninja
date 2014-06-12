@@ -144,7 +144,10 @@ $(document).ready(function(){
 	<table>
 	
 	<tr><td><input  name="title" type="text" placeholder="Title" /></td><td><span class="status"><span></span></span></td></tr>
-	
+
+
+<input type="hidden" value="website" name="obj_type" />
+<!--	
 	<tr><td><select name="obj_type">
 			<option value="website">Website</option>
 			<option value="profile">Profile</option>
@@ -159,7 +162,7 @@ $(document).ready(function(){
 			<option value="music.playlist">Playlist</option>
 			<option value="music.radio_station">Radio Station</option>
 		</select></td></tr>
-	
+-->	
 	<tr><td><input name="image" type="text" placeholder="Image URL" /></td><td><span class="status"><span></span></span></td></tr>
 	
 
@@ -178,7 +181,7 @@ $(document).ready(function(){
 	</div>
 
 	<div id="footer">
-		<div class="message">Get involved, help keep the servers running!</div>
+		<div class="message">Help keep the servers running!</div>
 <table><tr>
 
 <td>
