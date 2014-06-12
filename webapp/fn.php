@@ -106,7 +106,7 @@ function get_og($hash){
 			$og->title = $row['title'];
 			$og->type = $row['type'];
 			$og->image = $row['image'];
-
+			$og->description = $row['description'];
 			mysqli_free_result($result);
 			return $og;
 		}

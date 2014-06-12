@@ -37,7 +37,6 @@
 
 	<?php
 
-
 		//Required
     		echo "<meta property=\"og:title\" content=\"".$og->title."\" />";
 		echo "<meta property=\"og:type\" content=\"".$og->type."\"  />";

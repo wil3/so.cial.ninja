@@ -198,7 +198,7 @@ $(document).ready(function(){
 <img src="images/bitcoin.png" id="bitcoin_logo" />
 
 <div id="addr">
-234lkj2234j2l3kj23lkj23lkj23lkj232
+<a href="bitcoin:1A8yxEWen14KbMxvnzDVvDy9DeXFjWxq1Y">1A8yxEWen14KbMxvnzDVvDy9DeXFjWxq1Y</a>
 </div>
 </div>
 </td>	
