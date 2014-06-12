@@ -6,7 +6,7 @@
                 header ("Location: http://{$_SERVER['SERVER_NAME']}/404.php");
         }
 
-		
+	$this_url = "http://{$_SERVER['SERVER_NAME']}/{$hash}";	
 	$target_url = get_target_url($hash);
 	$og = get_og($hash);
 
@@ -41,7 +41,7 @@
 		//Required
     		echo "<meta property=\"og:title\" content=\"".$og->title."\" />";
 		echo "<meta property=\"og:type\" content=\"".$og->type."\"  />";
-    		echo "<meta property=\"og:url\" content=\"".$target_url."\" />";
+    		echo "<meta property=\"og:url\" content=\"{$this_url}\" />";
     		echo "<meta property=\"og:image\" content=\"".$og->image."\" />";
 		//Optional
 		if (!empty($og->site_name)){
