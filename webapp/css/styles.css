@@ -1,7 +1,41 @@
-#page {
-	
-	}
-	
+body {
+		font-family:sans-serif;
+}
+form {
+	margin:0px;
+}
+html, body, #page { height: 100%; }
+body > #page { height: auto; min-height: 100%; }
+#footer {
+	clear: both;
+	 position: relative;
+	 z-index: 10;
+	 height: 120px;
+	 margin-top: -120px;
+	text-align: center;
+}	
+#paypal_logo {
+	width:100px;
+}
+#bitcoin_logo {
+	width:40px;
+}
+#footer table {
+	margin-left:auto;
+	margin-right:auto;
+}
+.donate_wrapper {
+	border: 1px solid #AAAAAA;
+	padding:10px;
+}
+#addr {
+	height:50px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.message {
+	padding:10px;
+}
 	.hd {
 		margin-top:10px;
 		text-align:center;
@@ -42,7 +76,7 @@
 	.not_generated {
 
 	}
-	form {
+	#new_link {
 		width:500px;
 		margin-left:auto;
 		margin-right:auto;
@@ -55,7 +89,7 @@
 
 		width:100%;
 	}
-	td {
+ 	#new_link	td {
 
 		padding-bottom:10px;
 	}

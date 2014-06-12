@@ -96,7 +96,7 @@ if ($valid){
 	mysqli_close($conn);
 $res = new Response();
 $res->success = $success;
-$res->link = $hash;
+$res->link = "http://{$_SERVER['SERVER_NAME']}/".$hash;
 $res->reason = $reason;
 
 echo json_encode($res);

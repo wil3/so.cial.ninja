@@ -2,15 +2,22 @@
 	require_once 'db.php';
 	require_once 'fn.php';
 	$hash = substr($_SERVER['REQUEST_URI'],1);
+	if (!hash_exists($hash)){
+                header ("Location: http://{$_SERVER['SERVER_NAME']}/404.php");
+        }
+
+		
+	$target_url = get_target_url($hash);
+	$og = get_og($hash);
 
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
     <html>
     <head>
-    <title></title>
+    <title><?php echo $og->title; ?> </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="" />
+    <meta name="description" content="<?php echo $og->description; ?>" />
      
     <!-- Schema.org markup for Google+
     <meta itemprop="name" content="">
@@ -30,10 +37,6 @@
 
 	<?php
 
-		
-		$target_url = get_target_url($hash);
-		
-		$og = get_og($hash);
 
 		//Required
     		echo "<meta property=\"og:title\" content=\"".$og->title."\" />";
@@ -47,7 +50,7 @@
 		if (!empty($og->description)){
     			echo "<meta property=\"og:description\" content=\"".$og->description."\" />";
 		}	
-    		//echo "<meta http-equiv=\"refresh\" content=\"0; url=".$target_url."\"/>";
+    		echo "<meta http-equiv=\"refresh\" content=\"0; url=".$target_url."\"/>";
 	?>
     </head>
      
