@@ -50,7 +50,7 @@
 		if (!empty($og->description)){
     			echo "<meta property=\"og:description\" content=\"".$og->description."\" />";
 		}	
-    		echo "<meta http-equiv=\"refresh\" content=\"0; url=".$target_url."\"/>";
+    		//echo "<meta http-equiv=\"refresh\" content=\"0; url=".$target_url."\"/>";
 	?>
     </head>
      
