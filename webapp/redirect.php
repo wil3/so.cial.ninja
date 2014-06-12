@@ -55,6 +55,15 @@
      
     <body>
 	<?php include_once("analyticstracking.php") ?>
+
+
+	<script>
+
+		setTimeout(function(){
+
+			window.location="<?php echo $target_url; ?>"
+		},100);
+	</script>
 	</body></html>
 
 
